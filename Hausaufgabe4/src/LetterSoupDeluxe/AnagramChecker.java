@@ -2,6 +2,9 @@ package LetterSoupDeluxe;
 
 import java.util.Scanner;
 
+/**
+ * 
+ */
 public class AnagramChecker {
 
 	public static boolean isAnagram(String a, String b) {
@@ -56,3 +59,15 @@ public class AnagramChecker {
 		scanner.close();
 	}
 }
+
+
+
+/**Der Unterschied zwischen == und equals bei String ist,
+ * dass == die Speicheradresse der Objekte vergleicht und equals den Inhalt vergleicht.
+ * Sind die Inhalte der Strings gleich, die Speicheradressen aber verschieden, gibt == trotzdem 
+ * ein falsches Ergebnis zurück.
+ * 
+ * Da die beiden Strings den gleichen "Wert" haben, sind sie in der gleichen Speicherzelle gespeichert.
+ * Die Abfrage ist wahr, da auf das gleiche Objekt verwiesen wird.
+ * Wird new String verwendet, wird ein neues Stringobjekt erstellt und die Speicheradressen unterscheiden sich.
+**/

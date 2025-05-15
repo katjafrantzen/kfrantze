@@ -7,6 +7,7 @@ public class Main {
 			Calculator.divide(3, 0);
 		} catch (ArithmeticException e) {
 			System.out.println("Ein arithmetischer Fehler ist aufgetreten: " + e.getMessage());
+			System.out.println(Double.NaN);
 		}
 
 	}

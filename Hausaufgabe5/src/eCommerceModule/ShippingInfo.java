@@ -8,6 +8,12 @@ public class ShippingInfo {
 
 	
 	public ShippingInfo(String city, int zip, String country) throws InvalidShippingInfoException{
+		if(city == null || city.isEmpty()) {
+			throw new InvalidShippingInfoException("City cannot be empty");
+		}
+		if(zip <= 0) {
+			throw new InvalidShippingInfoException("Zip code must be a positive number");
+		}
 		this.city = city;
 		this.zip = zip;
 		this.country = country;
